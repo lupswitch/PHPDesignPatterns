@@ -37,23 +37,37 @@ class Iteratable implements \Iterator
 
 
     /**
-     *
+     * resset position
      */
     public function rewind()
     {
         $this->position = 0;
     }
 
+
+    /**
+     * Get current value
+     * @return mixed
+     */
     public function current()
     {
         return $this->data[$this->position];
     }
 
+
+    /**
+     * Get current key
+     * @return int
+     */
     public function key()
     {
         return $this->position;
     }
 
+
+    /**
+     * Next positon
+     */
     public function next()
     {
         ++$this->position;
@@ -61,7 +75,7 @@ class Iteratable implements \Iterator
 
 
     /**
-     * @return bool             
+     * @return bool
      */
     public function valid()
     {
