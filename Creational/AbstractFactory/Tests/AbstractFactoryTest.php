@@ -29,4 +29,12 @@ class AbstractFactoryTest extends \PHPUnit_Framework_TestCase
 
         $this->assertInstanceOf('PHPDesignPatterns\Creational\AbstractFactory\JsonText', $text);
     }
+
+    public function testCanCreateXmlText()
+    {
+        $factory = new XmlFactory();
+        $text = $factory->createText('foobar');
+
+        $this->assertInstanceOf('PHPDesignPatterns\Creational\AbstractFactory\JsonText', $text);
+    }
 }
