@@ -1,14 +1,10 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Script
- * Date: 26.02.2017
- * Time: 15:01
- */
-
 namespace PHPDesignPatterns\Creational\AbstractFactory;
 
-
+/**
+ * Class Text
+ * @package PHPDesignPatterns\Creational\AbstractFactory
+ */
 abstract class Text
 {
     /**
@@ -16,6 +12,11 @@ abstract class Text
      */
     private $text;
 
+
+    /**
+     * Text constructor.
+     * @param string $text
+     */
     public function __construct(string $text)
     {
         $this->text = $text;

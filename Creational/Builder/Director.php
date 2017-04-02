@@ -1,19 +1,19 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Script
- * Date: 26.02.2017
- * Time: 17:02
- */
-
 namespace PHPDesignPatterns\Creational\Builder;
 
+use PHPDesignPatterns\Creational\Builder\Vehicles\Vehicle;
 
-use PHPDesignPatterns\Creational\Builder\Parts\Vehicle;
-
+/**
+ * Class Director
+ * @package PHPDesignPatterns\Creational\Builder
+ */
 class Director
 {
-    public function build (BuilderInterface $builder) : Vehicle
+    /**
+     * @param BuilderInterface $builder
+     * @return Vehicle
+     */
+    public function build(BuilderInterface $builder) : Vehicle
     {
         $builder->createVehicle();
         $builder->addDoors();

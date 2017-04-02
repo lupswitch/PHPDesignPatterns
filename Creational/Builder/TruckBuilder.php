@@ -1,20 +1,13 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Script
- * Date: 26.02.2017
- * Time: 17:21
- */
-
 namespace PHPDesignPatterns\Creational\Builder;
 
-
-use PHPDesignPatterns\Creational\Builder\Parts\Vehicle;
+use PHPDesignPatterns\Creational\Builder\Vehicles\Truck;
+use PHPDesignPatterns\Creational\Builder\Vehicles\Vehicle;
 
 class TruckBuilder implements BuilderInterface
 {
     /**
-     * @var Parts\Truck
+     * @var Vehicles\Truck
      */
     private $truck;
 
@@ -23,7 +16,7 @@ class TruckBuilder implements BuilderInterface
      */
     public function createVehicle()
     {
-        $this->truck = new Parts\Truck();
+        $this->truck = new Truck();
     }
 
 

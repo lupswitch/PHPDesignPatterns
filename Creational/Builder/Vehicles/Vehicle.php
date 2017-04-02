@@ -1,14 +1,10 @@
 <?php
+namespace PHPDesignPatterns\Creational\Builder\Vehicles;
+
 /**
- * Created by PhpStorm.
- * User: Script
- * Date: 26.02.2017
- * Time: 17:13
+ * Class Vehicle
+ * @package PHPDesignPatterns\Creational\Builder\Vehicles
  */
-
-namespace PHPDesignPatterns\Creational\Builder\Parts;
-
-
 abstract class Vehicle
 {
     /**

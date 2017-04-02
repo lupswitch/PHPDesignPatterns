@@ -1,19 +1,18 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Script
- * Date: 26.02.2017
- * Time: 19:28
- */
-
 namespace PHPDesignPatterns\Creational\AbstractFactory;
 
-
+/**
+ * Class XmlFactory
+ * @package PHPDesignPatterns\Creational\AbstractFactory
+ */
 class XmlFactory extends AbstractFactory
 {
+    /**
+     * @param string $content
+     * @return Text
+     */
     public function createText(string $content): Text
     {
         return new XmlText($content);
     }
-
 }

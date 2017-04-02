@@ -1,15 +1,12 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Script
- * Date: 26.02.2017
- * Time: 15:51
- */
-
 namespace PHPDesignPatterns\Creational\Builder;
 
-use PHPDesignPatterns\Creational\Builder\Parts\Vehicle;
+use PHPDesignPatterns\Creational\Builder\Vehicles\Vehicle;
 
+/**
+ * Interface BuilderInterface
+ * @package PHPDesignPatterns\Creational\Builder
+ */
 interface BuilderInterface
 {
     public function createVehicle();
