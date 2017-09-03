@@ -32,7 +32,7 @@ class AbstractFactoryTest extends \PHPUnit_Framework_TestCase
 
 
     /**
-     * Tesct create XML factory
+     * Test create XML factory
      */
     public function testCanCreateXmlText()
     {
