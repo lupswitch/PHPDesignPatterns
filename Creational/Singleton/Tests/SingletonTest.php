@@ -5,15 +5,15 @@
  * Date: 03.09.2017
  * Time: 17:13
  */
-namespace DesignPatterns\Creational\Singleton\Tests;
+namespace PHPDesignPatterns\Creational\Singleton\Tests;
 
-use PHPDesignPatterns\Creational\Singleton\Singelton;
+use PHPDesignPatterns\Creational\Singleton\Singleton;
 
 /**
  * Class SingeltonTest
  * @package DesignPatterns\Creational\Singleton\Tests
  */
-class SingeltonTest extends \PHPUnit\Framework\TestCase
+class SingletonTest extends \PHPUnit\Framework\TestCase
 {
 
     /**
@@ -21,8 +21,8 @@ class SingeltonTest extends \PHPUnit\Framework\TestCase
      */
     public function testUniqueness()
     {
-        $firstCall = Singelton::getInstance();
-        $secondCall = Singelton::getInstance();
+        $firstCall = Singleton::getInstance();
+        $secondCall = Singleton::getInstance();
 
         $this->assertInstanceOf(Singleton::class, $firstCall);
         $this->assertSame($firstCall, $secondCall);

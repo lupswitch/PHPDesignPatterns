@@ -11,10 +11,10 @@ namespace PHPDesignPatterns\Creational\Singleton;
  * Class Singelton
  * @package PHPDesignPatterns\Creational\Singleton
  */
-final class Singelton
+final class Singleton
 {
     /**
-     * @var Singelton
+     * @var Singleton
      */
     private static $instance;
 
