@@ -1,14 +1,14 @@
 <?php
-namespace PHPDesignPatterns\Creational\FactoryMethod\Tests;
+namespace PHPDesignPatterns\Creational\FactoryMethod\CreateVehicle\Tests;
 
-use PHPDesignPatterns\Creational\FactoryMethod\Bicycle;
-use PHPDesignPatterns\Creational\FactoryMethod\CarFerrari;
-use PHPDesignPatterns\Creational\FactoryMethod\CarMercedes;
-use PHPDesignPatterns\Creational\FactoryMethod\CarSubaru;
-use PHPDesignPatterns\Creational\FactoryMethod\FactoryMethod;
-use PHPDesignPatterns\Creational\FactoryMethod\GermanFactory;
-use PHPDesignPatterns\Creational\FactoryMethod\ItalianFactory;
-use PHPDesignPatterns\Creational\FactoryMethod\JapanFactory;
+use PHPDesignPatterns\Creational\FactoryMethod\CreateVehicle\Bicycle;
+use PHPDesignPatterns\Creational\FactoryMethod\CreateVehicle\CarFerrari;
+use PHPDesignPatterns\Creational\FactoryMethod\CreateVehicle\CarMercedes;
+use PHPDesignPatterns\Creational\FactoryMethod\CreateVehicle\CarSubaru;
+use PHPDesignPatterns\Creational\FactoryMethod\CreateVehicle\FactoryMethod;
+use PHPDesignPatterns\Creational\FactoryMethod\CreateVehicle\GermanFactory;
+use PHPDesignPatterns\Creational\FactoryMethod\CreateVehicle\ItalianFactory;
+use PHPDesignPatterns\Creational\FactoryMethod\CreateVehicle\JapanFactory;
 
 /**
  * Class FactoryMethodTest

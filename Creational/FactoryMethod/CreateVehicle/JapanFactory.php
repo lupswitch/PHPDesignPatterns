@@ -18,7 +18,7 @@ class JapanFactory extends FactoryMethod
                 return new Bicycle();
             case parent::FAST:
                 $carSubaru =  new CarSubaru();
-                $carSubaru->addSTITuning();
+                $carSubaru->addStiTuning();
 
                 return $carSubaru;
             default:

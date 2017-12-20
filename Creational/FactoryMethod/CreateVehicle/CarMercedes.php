@@ -5,7 +5,7 @@
  * Time: 19:45
  */
 
-namespace PHPDesignPatterns\Creational\FactoryMethod;
+namespace PHPDesignPatterns\Creational\FactoryMethod\CreateVehicle;
 
 
 class CarMercedes implements  VehicleInterface

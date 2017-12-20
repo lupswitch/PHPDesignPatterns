@@ -1,5 +1,5 @@
 <?php
-namespace PHPDesignPatterns\Creational\FactoryMethod;
+namespace PHPDesignPatterns\Creational\FactoryMethod\CreateVehicle;
 
 /**
  * Class CarFerrari

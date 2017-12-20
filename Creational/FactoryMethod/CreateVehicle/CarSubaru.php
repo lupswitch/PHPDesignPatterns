@@ -4,7 +4,6 @@
  * Date: 26.02.2017
  * Time: 19:50
  */
-
 namespace PHPDesignPatterns\Creational\FactoryMethod\CreateVehicle;
 
 
@@ -26,7 +25,7 @@ class CarSubaru implements VehicleInterface
     /**
      * Add STI tuning
      */
-    public function addSTITuning()
+    public function addStiTuning()
     {
         // TODO
     }

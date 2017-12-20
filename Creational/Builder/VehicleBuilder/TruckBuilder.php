@@ -1,8 +1,8 @@
 <?php
 namespace PHPDesignPatterns\Creational\Builder\VehicleBuilder;
 
-use PHPDesignPatterns\Creational\Builder\Vehicles\Truck;
-use PHPDesignPatterns\Creational\Builder\Vehicles\Vehicle;
+use PHPDesignPatterns\Creational\Builder\VehicleBuilder\Vehicles\Truck;
+use PHPDesignPatterns\Creational\Builder\VehicleBuilder\Vehicles\Vehicle;
 
 class TruckBuilder implements BuilderInterface
 {

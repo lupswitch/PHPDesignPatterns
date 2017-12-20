@@ -22,6 +22,7 @@ class BridgeTest extends TestCase
 {
     public function testCanPrintUsingThePlainTextPrinter()
     {
+        echo __METHOD__.PHP_EOL;
         $service = new HelloWorldService(new PlainTextFormatter());
         $this->assertEquals('Hello World', $service->get());
     }
