@@ -6,10 +6,10 @@
  * Time: 18:19
  */
 
-namespace PHPDesignPatterns\Creational\SimpleFactory\Tests;
+namespace PHPDesignPatterns\Creational\SimpleFactory\Vehicle\Tests;
 
 
-use PHPDesignPatterns\Creational\SimpleFactory\SimpleFactory;
+use PHPDesignPatterns\Creational\SimpleFactory\Vehicle\SimpleFactory;
 
 class SimpleFactoryTest extends \PHPUnit_Framework_TestCase
 {
@@ -19,7 +19,7 @@ class SimpleFactoryTest extends \PHPUnit_Framework_TestCase
     public function testCanCreateBicycle()
     {
         $bicycle = (new SimpleFactory())->createBicycle();
-        $this->assertInstanceOf('PHPDesignPatterns\Creational\SimpleFactory\Bicycle', $bicycle);
+        $this->assertInstanceOf('PHPDesignPatterns\Creational\SimpleFactory\Vehicle\Bicycle', $bicycle);
     }
 
 
@@ -29,6 +29,6 @@ class SimpleFactoryTest extends \PHPUnit_Framework_TestCase
     public function testCanCreateCar()
     {
         $car = (new SimpleFactory())->createCar();
-        $this->assertInstanceOf('PHPDesignPatterns\Creational\SimpleFactory\Car', $car);
+        $this->assertInstanceOf('PHPDesignPatterns\Creational\SimpleFactory\Vehicle\Car', $car);
     }
 }

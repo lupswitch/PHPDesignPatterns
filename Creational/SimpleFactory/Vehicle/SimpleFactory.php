@@ -6,7 +6,7 @@
  * Time: 18:02
  */
 
-namespace PHPDesignPatterns\Creational\SimpleFactory;
+namespace PHPDesignPatterns\Creational\SimpleFactory\Vehicle;
 
 
 class SimpleFactory
@@ -16,6 +16,9 @@ class SimpleFactory
         return new Bicycle();
     }
 
+    /**
+     * @return Car
+     */
     public function createCar()
     {
         return new Car();

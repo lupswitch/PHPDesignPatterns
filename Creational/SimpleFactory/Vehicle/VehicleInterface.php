@@ -6,7 +6,7 @@
  * Time: 18:05
  */
 
-namespace PHPDesignPatterns\Creational\SimpleFactory;
+namespace PHPDesignPatterns\Creational\SimpleFactory\Vehicle;
 
 
 interface VehicleInterface
