@@ -11,7 +11,7 @@ namespace PHPDesignPatterns\Creational\FactoryMethod\HR;
 abstract  class HiringManager
 {
     /**
-     * Fabric method 
+     * Fabric method
      * @return Interviewer
      */
     abstract public function makeInterviewer(): Interviewer;
