@@ -4,7 +4,7 @@
  * Date: 03.09.2017
  * Time: 17:47
  */
-namespace PHPDesignPatterns\Creational\Prototype;
+namespace PHPDesignPatterns\Creational\Prototype\Book;
 
 /**
  * Class BookPrototype

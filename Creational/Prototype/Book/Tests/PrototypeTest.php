@@ -5,10 +5,10 @@
  * Time: 18:05
  */
 
-namespace PHPDesignPatterns\Creational\Prototype\Tests;
+namespace PHPDesignPatterns\Creational\Prototype\Book\Tests;
 
-use PHPDesignPatterns\Creational\Prototype\BusinessBookPrototype;
-use PHPDesignPatterns\Creational\Prototype\HistoryBookPrototype;
+use PHPDesignPatterns\Creational\Prototype\Book\BusinessBookPrototype;
+use PHPDesignPatterns\Creational\Prototype\Book\HistoryBookPrototype;
 use PHPUnit\Framework\TestCase;
 
 /**

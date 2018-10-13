@@ -2,17 +2,17 @@
 /**
  * User: Script
  * Date: 03.09.2017
- * Time: 18:03
+ * Time: 18:02
  */
-namespace PHPDesignPatterns\Creational\Prototype;
+namespace PHPDesignPatterns\Creational\Prototype\Book;
 
 /**
- * Class HistoryBookPrototype
+ * Class BusinessBookPrototype
  * @package DesignPatterns\Creational\Prototype
  */
-class HistoryBookPrototype extends BookPrototype
+class BusinessBookPrototype extends BookPrototype
 {
-    protected $category = 'History';
+    protected $category = 'Business';
 
     public function __clone()
     {
