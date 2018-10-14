@@ -5,9 +5,9 @@
  * Date: 03.09.2017
  * Time: 17:13
  */
-namespace PHPDesignPatterns\Creational\Singleton\Tests;
+namespace PHPDesignPatterns\Creational\Singleton\Simple\Tests;
 
-use PHPDesignPatterns\Creational\Singleton\Singleton;
+use PHPDesignPatterns\Creational\Singleton\Simple\Singleton;
 
 /**
  * Class SingeltonTest

@@ -5,7 +5,7 @@
  * Time: 17:11
  */
 
-namespace PHPDesignPatterns\Creational\Singleton;
+namespace PHPDesignPatterns\Creational\Singleton\Simple;
 
 /**
  * Class Singelton
