@@ -5,11 +5,11 @@
  * Time: 6:39
  */
 
-namespace PHPDesignPatterns\Structural\Adapter\Tests;
+namespace PHPDesignPatterns\Structural\Adapter\BookAdapter\Tests;
 
-use PHPDesignPatterns\Structural\Adapter\Book;
-use PHPDesignPatterns\Structural\Adapter\EBookAdapter;
-use PHPDesignPatterns\Structural\Adapter\Kindle;
+use PHPDesignPatterns\Structural\Adapter\BookAdapter\Book;
+use PHPDesignPatterns\Structural\Adapter\BookAdapter\EBookAdapter;
+use PHPDesignPatterns\Structural\Adapter\BookAdapter\Kindle;
 use PHPUnit\Framework\TestCase;
 
 class AdapterTest extends TestCase

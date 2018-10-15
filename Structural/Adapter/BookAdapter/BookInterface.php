@@ -5,7 +5,7 @@
  * Time: 20:40
  */
 
-namespace PHPDesignPatterns\Structural\Adapter;
+namespace PHPDesignPatterns\Structural\Adapter\BookAdapter;
 
 
 interface BookInterface

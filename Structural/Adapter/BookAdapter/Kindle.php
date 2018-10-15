@@ -5,7 +5,7 @@
  * Time: 6:38
  */
 
-namespace PHPDesignPatterns\Structural\Adapter;
+namespace PHPDesignPatterns\Structural\Adapter\BookAdapter;
 
 
 class Kindle implements EBookInterface
