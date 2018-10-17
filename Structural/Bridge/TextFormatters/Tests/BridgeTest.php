@@ -8,10 +8,10 @@
 namespace PHPDesignPatterns\Structural\Bridge\TextFormatters\Tests;
 
 
-use PHPDesignPatterns\Structural\Bridge\Formatters\HtmlFormatter;
-use PHPDesignPatterns\Structural\Bridge\Formatters\JsonFormatter;
-use PHPDesignPatterns\Structural\Bridge\Formatters\PlainTextFormatter;
-use PHPDesignPatterns\Structural\Bridge\HelloWorldService;
+use PHPDesignPatterns\Structural\Bridge\TextFormatters\Formatters\HtmlFormatter;
+use PHPDesignPatterns\Structural\Bridge\TextFormatters\Formatters\JsonFormatter;
+use PHPDesignPatterns\Structural\Bridge\TextFormatters\Formatters\PlainTextFormatter;
+use PHPDesignPatterns\Structural\Bridge\TextFormatters\HelloWorldService;
 use PHPUnit\Framework\TestCase;
 
 /**
@@ -22,7 +22,6 @@ class BridgeTest extends TestCase
 {
     public function testCanPrintUsingThePlainTextPrinter()
     {
-        echo __METHOD__.PHP_EOL;
         $service = new HelloWorldService(new PlainTextFormatter());
         $this->assertEquals('Hello World', $service->get());
     }

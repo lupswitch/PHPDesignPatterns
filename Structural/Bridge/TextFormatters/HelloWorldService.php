@@ -5,7 +5,7 @@
  * Time: 19:57
  */
 
-namespace PHPDesignPatterns\Structural\TextFormatters\Bridge;
+namespace PHPDesignPatterns\Structural\Bridge\TextFormatters;
 
 
 class HelloWorldService extends Service

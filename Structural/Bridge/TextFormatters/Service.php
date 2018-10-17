@@ -4,7 +4,7 @@
  * Date: 26.11.2017
  * Time: 19:56
  */
-namespace PHPDesignPatterns\Structural\TextFormatters\Bridge;
+namespace PHPDesignPatterns\Structural\TextFormatters\Bridge\TextFormatters;
 
 use PHPDesignPatterns\Structural\Bridge\TextFormatters\Formatters\FormatterInterface;
 
