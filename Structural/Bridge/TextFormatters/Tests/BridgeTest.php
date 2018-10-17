@@ -5,7 +5,7 @@
  * Time: 20:14
  */
 
-namespace PHPDesignPatterns\Structural\Bridge\Tests;
+namespace PHPDesignPatterns\Structural\Bridge\TextFormatters\Tests;
 
 
 use PHPDesignPatterns\Structural\Bridge\Formatters\HtmlFormatter;

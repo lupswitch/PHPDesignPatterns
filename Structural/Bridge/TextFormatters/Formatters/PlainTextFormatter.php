@@ -5,7 +5,7 @@
  * Time: 19:49
  */
 
-namespace PHPDesignPatterns\Structural\Bridge\Formatters;
+namespace PHPDesignPatterns\Structural\Bridge\TextFormatters\Formatters;
 
 
 class PlainTextFormatter implements FormatterInterface

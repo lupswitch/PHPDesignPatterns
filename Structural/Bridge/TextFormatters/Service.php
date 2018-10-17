@@ -4,9 +4,9 @@
  * Date: 26.11.2017
  * Time: 19:56
  */
-namespace PHPDesignPatterns\Structural\Bridge;
+namespace PHPDesignPatterns\Structural\TextFormatters\Bridge;
 
-use PHPDesignPatterns\Structural\Bridge\Formatters\FormatterInterface;
+use PHPDesignPatterns\Structural\Bridge\TextFormatters\Formatters\FormatterInterface;
 
 abstract class Service
 {

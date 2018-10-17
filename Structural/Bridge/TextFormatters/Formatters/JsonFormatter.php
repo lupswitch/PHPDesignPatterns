@@ -5,7 +5,7 @@
  * Time: 20:10
  */
 
-namespace PHPDesignPatterns\Structural\Bridge\Formatters;
+namespace PHPDesignPatterns\Structural\Bridge\TextFormatters\Formatters;
 
 
 class JsonFormatter implements FormatterInterface
