@@ -14,7 +14,6 @@ class MultitonTest extends \PHPUnit\Framework\TestCase
 {
     public function testUniqueness()
     {
-        echo __METHOD__.PHP_EOL;
         $firstCall = Multiton::getInstance(Multiton::INSTANCE_1);
         $secondCall = Multiton::getInstance(Multiton::INSTANCE_1);
         $this->assertInstanceOf(Multiton::class, $firstCall);

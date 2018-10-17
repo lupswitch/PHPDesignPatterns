@@ -17,7 +17,6 @@ class CompositeTest extends TestCase
 {
     public function testRender()
     {
-        echo __METHOD__.PHP_EOL;
         $form = new Form();
         $form->addElement(new TextElement('Email:'));
         $form->addElement(new InputElement());

@@ -12,7 +12,6 @@ class AbstractFactoryTest extends \PHPUnit_Framework_TestCase
      */
     public function testCanCreateHtmlText()
     {
-        echo __METHOD__.PHP_EOL;
         $factory = new HtmlFactory();
         $text = $factory->createText('foobar');
 
