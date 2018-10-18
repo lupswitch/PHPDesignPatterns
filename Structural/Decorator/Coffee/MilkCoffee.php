@@ -8,7 +8,7 @@
 namespace PHPDesignPatterns\Structural\Decorator\Coffee;
 
 
-class MilkCoffee
+class MilkCoffee implements Coffee
 {
     protected $coffee;
 

@@ -20,19 +20,18 @@ class CoffeeTest extends TestCase
     {
         $someCoffee = new SimpleCoffee();
         $this->assertEquals(10, $someCoffee->getCost());
-        $this->assertEquals('Simple Coffee' , $someCoffee->getDescription());
+        $this->assertEquals('Simple coffee' , $someCoffee->getDescription());
 
         $someCoffee = new MilkCoffee($someCoffee);
         $this->assertEquals(12, $someCoffee->getCost());
-        $this->assertEquals('Simple Coffee, milk' , $someCoffee->getDescription());
-
+        $this->assertEquals('Simple coffee, milk' , $someCoffee->getDescription());
 
         $someCoffee = new WhipCoffee($someCoffee);
         $this->assertEquals(17, $someCoffee->getCost());
-        $this->assertEquals('Simple Coffee, milk, whip' , $someCoffee->getDescription());
+        $this->assertEquals('Simple coffee, milk, whip' , $someCoffee->getDescription());
 
         $someCoffee = new VanillaCoffee($someCoffee);
         $this->assertEquals(20, $someCoffee->getCost());
-        $this->assertEquals('Simple Coffee, milk, whip, vanilla' , $someCoffee->getDescription());
+        $this->assertEquals('Simple coffee, milk, whip, vanilla' , $someCoffee->getDescription());
     }
 }
