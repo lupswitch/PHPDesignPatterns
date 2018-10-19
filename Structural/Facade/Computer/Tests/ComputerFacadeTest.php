@@ -27,6 +27,6 @@ class ComputerFacadeTest extends TestCase
         ob_start();
         $computer->turnOff();
         $result = ob_get_clean();
-        $this->assertEquals('Bup bup bup buzzzz!'.PHP_EOL.'Haah!'.PHP_EOL.'Zzzzz'.PHP_EOL, $result);
+        $this->assertEquals("Bup bup bup buzzzz!".PHP_EOL."Haaah!".PHP_EOL.'Zzzzz'.PHP_EOL, $result);
     }
 }
