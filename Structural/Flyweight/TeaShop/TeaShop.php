@@ -25,8 +25,11 @@ class TeaShop
 
     public function serve()
     {
+        $result = '';
         foreach ($this->orders as $table => $tea) {
-            echo "Serving tea to table# " . $table;
+            $result .= "Serving tea to table# " . $table.PHP_EOL;
         }
+
+        return $result;
     }
 }
