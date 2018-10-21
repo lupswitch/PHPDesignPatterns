@@ -19,7 +19,7 @@ use PHPUnit\Framework\TestCase;
 class IronDoorFactoryTest extends TestCase
 {
     /**
-     *
+     * Test instance of
      */
     public function testInstanceOf()
     {
@@ -33,6 +33,9 @@ class IronDoorFactoryTest extends TestCase
     }
 
 
+    /**
+     * Test description return compare
+     */
     public function testValueCompare ()
     {
         $woodenFactory = new IronDoorFactory();

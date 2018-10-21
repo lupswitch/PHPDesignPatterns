@@ -15,11 +15,17 @@ use PHPDesignPatterns\Creational\AbstractFactory\DoorFitting\Experts\DoorFitting
 
 class WoodenDoorFactory implements DoorFactory
 {
+    /**
+     * @return Door
+     */
     public function makeDoor(): Door
     {
         return new WoodenDoor();
     }
 
+    /**
+     * @return DoorFittingExpert
+     */
     public function makeFittingExpert(): DoorFittingExpert
     {
         return new Carpenter();

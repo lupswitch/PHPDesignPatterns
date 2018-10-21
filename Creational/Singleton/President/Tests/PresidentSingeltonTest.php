@@ -22,6 +22,4 @@ class PresidentSingeltonTest extends TestCase
 
         $this->assertSame($president1, $president2);
     }
-
-
 }

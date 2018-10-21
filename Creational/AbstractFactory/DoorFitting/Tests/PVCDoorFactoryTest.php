@@ -14,6 +14,10 @@ use PHPUnit\Framework\TestCase;
 
 class PVCDoorFactoryTest  extends TestCase
 {
+
+    /**
+     *
+     */
     public function testInstanceOf()
     {
         $woodenFactory = new PVCDoorFactory();
@@ -26,6 +30,9 @@ class PVCDoorFactoryTest  extends TestCase
     }
 
 
+    /**
+     *
+     */
     public function testValueCompare ()
     {
         $woodenFactory = new PVCDoorFactory();
