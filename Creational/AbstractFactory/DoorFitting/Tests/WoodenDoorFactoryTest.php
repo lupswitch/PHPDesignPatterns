@@ -30,6 +30,7 @@ class WoodenDoorFactoryTest extends TestCase
 
 
     /**
+     * Test value compare 
      *
      */
     public function testValueCompare ()
