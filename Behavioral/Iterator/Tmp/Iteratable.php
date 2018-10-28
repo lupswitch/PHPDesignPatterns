@@ -1,5 +1,5 @@
 <?php
-namespace PHPDesignPatterns\Behavioral\Iterator;
+namespace PHPDesignPatterns\Behavioral\Iterator\Tmp;
 
 /**
  * Class Iteratable
