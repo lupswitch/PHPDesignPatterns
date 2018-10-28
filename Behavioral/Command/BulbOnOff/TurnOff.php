@@ -8,7 +8,7 @@
 namespace PHPDesignPatterns\Behavioral\Command\BulbOnOff;
 
 
-class TurnOff
+class TurnOff implements Command
 {
     protected $bulb;
 
