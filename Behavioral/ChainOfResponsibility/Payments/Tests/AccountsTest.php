@@ -14,13 +14,6 @@ use PHPUnit\Framework\TestCase;
 
 class AccountsTest extends TestCase
 {
-    const EXPECTED_RESULT = <<<EOL
-Cannot pay using PHPDesignPatterns\Behavioral\ChainOfResponsibility\Payments\Bank. Proceeding ..
-Cannot pay using PHPDesignPatterns\Behavioral\ChainOfResponsibility\Payments\Paypal. Proceeding ..
-Paid 259 using PHPDesignPatterns\Behavioral\ChainOfResponsibility\Payments\Bitcoin
-
-EOL;
-
     public function testMain()
     {
         // set balance for accounts
@@ -46,7 +39,6 @@ EOL;
 
     private function getExpectedResultString()
     {
-        return self::EXPECTED_RESULT;
 
         return 'Cannot pay using PHPDesignPatterns\Behavioral\ChainOfResponsibility\Payments\Bank. Proceeding ..'.PHP_EOL.
            'Cannot pay using PHPDesignPatterns\Behavioral\ChainOfResponsibility\Payments\Paypal. Proceeding ..'.PHP_EOL.
