@@ -47,7 +47,7 @@ EOL;
     private function getExpectedResultString()
     {
         return self::EXPECTED_RESULT;
-        
+
         return 'Cannot pay using PHPDesignPatterns\Behavioral\ChainOfResponsibility\Payments\Bank. Proceeding ..'.PHP_EOL.
            'Cannot pay using PHPDesignPatterns\Behavioral\ChainOfResponsibility\Payments\Paypal. Proceeding ..'.PHP_EOL.
             'Paid 259 using PHPDesignPatterns\Behavioral\ChainOfResponsibility\Payments\Bitcoin'.PHP_EOL;
