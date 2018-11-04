@@ -20,6 +20,6 @@ class JobSeeker implements Observer
     public function onJobPosted(JobPost $job)
     {
         // Do something with the job posting
-        echo 'Hi ' . $this->name . '! New job posted: '. $job->getTitle();
+        echo 'Hi ' . $this->name . '! New job posted: '. $job->getTitle().' ';
     }
 }

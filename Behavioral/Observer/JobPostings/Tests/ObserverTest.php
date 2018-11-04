@@ -17,20 +17,25 @@ class ObserverTest extends TestCase
 {
     public function testMain()
     {
-        // Создаём подписчиков
+        // Create subscribers
         $johnDoe = new JobSeeker('John Doe');
         $janeDoe = new JobSeeker('Jane Doe');
 
-// Создаём публикатора и прикрепляем подписчиков
+        // Создаём публикатора и прикрепляем подписчиков
         $jobPostings = new JobPostings();
         $jobPostings->attach($johnDoe);
         $jobPostings->attach($janeDoe);
 
-// Добавляем новую вакансию и смотрим, будут ли уведомлены подписчики
+        // Add new job
+        ob_start();
         $jobPostings->addJob(new JobPost('Software Engineer'));
+         $result = ob_get_clean();
 
-// Output
-// Hi John Doe! New job posted: Software Engineer
-// Hi Jane Doe! New job posted: Software Engineer
+        // Output
+        // Hi John Doe! New job posted: Software Engineer
+        // Hi Jane Doe! New job posted: Software Engineer
+        $this->assertEquals('Hi John Doe! New job posted: Software Engineer Hi Jane Doe! New job posted: Software Engineer ', $result);
+
+
     }
 }
