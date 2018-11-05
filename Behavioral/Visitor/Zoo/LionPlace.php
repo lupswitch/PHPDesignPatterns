@@ -17,6 +17,6 @@ class LionPlace implements AnimalPlace
 
     public function accept(AnimalOperation $operation)
     {
-        $operation->visitLion($this);
+        return $operation->visitLion($this);
     }
 }

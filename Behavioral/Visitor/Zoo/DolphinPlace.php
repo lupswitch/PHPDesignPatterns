@@ -17,6 +17,6 @@ class DolphinPlace implements AnimalPlace
 
     public function accept(AnimalOperation $operation)
     {
-        $operation->visitDolphin($this);
+        return $operation->visitDolphin($this);
     }
 }

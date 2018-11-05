@@ -17,6 +17,6 @@ class MonkeyPlace implements AnimalPlace
 
     public function accept(AnimalOperation $operation)
     {
-        $operation->visitMonkey($this);
+        return $operation->visitMonkey($this);
     }
 }
