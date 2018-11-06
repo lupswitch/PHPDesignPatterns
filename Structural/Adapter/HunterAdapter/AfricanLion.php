@@ -14,8 +14,5 @@ class AfricanLion implements Lion
     /**
      * Lion method
      */
-    public function roar()
-    {
-        // TODO: Implement roar() method.
-    }
+    public function roar() {}
 }
