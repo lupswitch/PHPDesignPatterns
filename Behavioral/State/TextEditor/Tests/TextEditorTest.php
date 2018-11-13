@@ -22,6 +22,7 @@ class TextEditorTest extends TestCase
     {
         $this->editor = new TextEditor(new DefaultCase());
     }
+
     public function testDefaultCase()
     {
         $this->expectOutputString('First line');
@@ -35,9 +36,11 @@ class TextEditorTest extends TestCase
 
         $this->expectOutputString('SECOND LINE');
         $this->editor->type('Second line');
-
     }
 
+    /**
+     * Test Lower case
+     */
     public function testLowerCase()
     {
         $this->editor->setState(new LowerCase());
