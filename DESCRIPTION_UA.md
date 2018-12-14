@@ -165,3 +165,99 @@ class MarketingManager extends HiringManager
 
 **Wiki:** Шаблон «Абстрактна фабрика» описує спосіб інкапсулювання групи індивідуальних фабрик, об'єднаних якоюсь темою, без вказівки для них конкретних класів.
 
+#### Приклад
+
+
+Створення обєктів дверей
+
+ ```php
+interface Door
+{
+    public function getDescription();
+}
+
+class WoodenDoor implements Door
+{
+    public function getDescription()
+    {
+        echo 'I am a wooden door';
+    }
+}
+
+class IronDoor implements Door
+{
+    public function getDescription()
+    {
+        echo 'I am an iron door';
+    }
+}
+    
+ ```
+
+ Cтворення обєктів майстрів 
+ 
+```php
+interface DoorFittingExpert
+{
+public function getDescription();
+}
+
+class Welder implements DoorFittingExpert
+{
+public function getDescription()
+{
+    echo 'I can only fit iron doors';
+}
+}
+
+class Carpenter implements DoorFittingExpert
+{
+public function getDescription()
+{
+    echo 'I can only fit wooden doors';
+}
+}
+   
+```
+
+Ствоерння абстрактних фабрик
+```php
+interface DoorFactory
+{
+    public function makeDoor(): Door;
+    public function makeFittingExpert(): DoorFittingExpert;
+}
+
+// Фабрика деревяних дверей вертає тесляра і деревяні двері 
+class WoodenDoorFactory implements DoorFactory
+{
+    public function makeDoor(): Door
+    {
+        return new WoodenDoor();
+    }
+
+    public function makeFittingExpert(): DoorFittingExpert
+    {
+        return new Carpenter();
+    }
+}
+
+// Фабрика металевих дверей вертає металеві двері і зварювальника
+class IronDoorFactory implements DoorFactory
+{
+    public function makeDoor(): Door
+    {
+        return new IronDoor();
+    }
+
+    public function makeFittingExpert(): DoorFittingExpert
+    {
+        return new Welder();
+    }
+}
+   
+```
+
+#### Коли використовувати
+
+Коли у нас є взаємозв'язоки з не самою простою логікою створення (creation logic).
