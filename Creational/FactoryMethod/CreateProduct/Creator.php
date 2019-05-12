@@ -11,6 +11,10 @@ namespace PHPDesignPatterns\Creational\FactoryMethod\CreateProduct;
 
 abstract class Creator
 {
+    /**
+     * Main factory method
+     * @return Product
+     */
     abstract public function factoryMethod(): Product;
 
     public function someOperation(): string

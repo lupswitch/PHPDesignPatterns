@@ -9,6 +9,10 @@
 namespace PHPDesignPatterns\Creational\FactoryMethod\CreateProduct;
 
 
+/**
+ * Interface for main  product
+ * @package PHPDesignPatterns\Creational\FactoryMethod\CreateProduct
+ */
 interface Product
 {
     public function operation(): string;
